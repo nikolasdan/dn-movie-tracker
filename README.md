@@ -2,27 +2,27 @@
 
 ## Primii pași
 
-1. Fork la acest repo
-2. `git clone` la forkul nou creat (nu acest repo)
-3. `npm install` pentru a descărca toate dependențele necesare
-4. Creează un branch nou `project` din `main` și lucrează pe el
-5. Oferă-mi access la fork, de pe GitHub `settings/access`, invită un colaborator, caută
-   `victor@locoman.ro`
-6. Adaugă 1-2 colegi la colaboratori ca să vă ajutați reciproc prin feedback la cod/soluție
-7. Copiază fișierul `.env.example` în `.env` și completează-l
+1. ~~Fork la acest repo~~
+2. ~~`git clone` la forkul nou creat (nu acest repo)~~
+3. ~~`npm install` pentru a descărca toate dependențele necesare~~
+4. ~~Creează un branch nou `project` din `main` și lucrează pe el~~
+5. ~~Oferă-mi access la fork, de pe GitHub `settings/access`, invită un colaborator, caută
+   `victor@locoman.ro`~~
+6. ~~Adaugă 1-2 colegi la colaboratori ca să vă ajutați reciproc prin feedback la cod/soluție~~
+7. ~~Copiază fișierul `.env.example` în `.env` și completează-l~~
 
 ## Rularea proiectului
 
-1. rulează instrucțiunea `npm run start:server` - va porni serverul
-2. intră pe http://localhost:3001/api/, ar trebui să vezi mesajul "API not found"
-3. deschide insomnia și adaugă o colecție nouă, apoi testează ruta de mai sus. Ar trebui să vezi
-   același mesaj.
-4. Adaugă ruta pentru crearea unui utilizator:
+1. ~~rulează instrucțiunea `npm run start:server` - va porni serverul~~
+2. ~~intră pe http://localhost:3001/api/, ar trebui să vezi mesajul "API not found"~~
+3. ~~deschide insomnia și adaugă o colecție nouă, apoi testează ruta de mai sus. Ar trebui să vezi
+   același mesaj.~~
+4. ~~Adaugă ruta pentru crearea unui utilizator:~~
    - URL: `http://localhost:3001/api/users/`
    - Method: `POST`
    - Body (JSON): `{"email": "..."}`
    - Apoi send, ar trebui să apară asemănător ca și în imagine
-5. Verifică că datele s-au salvat, prin `GET users/:email`
+5. ~~Verifică că datele s-au salvat, prin `GET users/:email`~~
 
 ![insomnia.png](./images/insomnia.png)
 
