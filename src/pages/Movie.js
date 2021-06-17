@@ -79,6 +79,7 @@ export default function Movie() {
             w="35vw"
             maxW={300}
             fallbackSrc={imageFallback}
+            borderRadius="20px"
           />
         </Box>
         <Box w="100%">
@@ -88,7 +89,7 @@ export default function Movie() {
               {getYear(movie.release_date)}
             </Text>
           </HStack>
-          <Text fontFamily="montserrat">{movie.overview}</Text>
+          <Text paddingTop="30px" fontFamily="montserrat">{movie.overview}</Text>
         </Box>
       </HStack>
     </Container>
