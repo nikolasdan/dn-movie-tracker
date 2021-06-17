@@ -80,16 +80,17 @@ export default function Movie() {
             maxW={300}
             fallbackSrc={imageFallback}
             borderRadius="20px"
+            _selection={{ color: "white", bg: "green.400"}}
           />
         </Box>
         <Box w="100%">
           <HStack justify="space-between">
-            <Heading as="h2" fontFamily="montserrat">{movie.title}</Heading>
-            <Text as="span" color="GrayText" fontFamily="montserrat">
+            <Heading as="h2" fontFamily="montserrat" _selection={{ color: "white", bg: "green.400"}}>{movie.title}</Heading>
+            <Text as="span" color="GrayText" fontFamily="montserrat" _selection={{ color: "white", bg: "green.400"}}>
               {getYear(movie.release_date)}
             </Text>
           </HStack>
-          <Text paddingTop="30px" fontFamily="montserrat">{movie.overview}</Text>
+          <Text paddingTop="30px" fontFamily="montserrat" _selection={{ color: "white", bg: "green.400"}}>{movie.overview}</Text>
         </Box>
       </HStack>
     </Container>

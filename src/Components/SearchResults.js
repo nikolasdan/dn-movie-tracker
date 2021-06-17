@@ -16,7 +16,7 @@ export default function Search() {
   );
 
   if (isIdle) {
-    return <Center><Text padding="15px" fontFamily="Montserrat">Type the name of a movie!</Text></Center>;
+    return <Center><Text padding="15px" fontFamily="Montserrat" _selection={{ color: "white", bg: "green.400"}}>Type the name of a movie!</Text></Center>;
   }
   if (isLoading) {
     return <Progress size="xs" isIndeterminate />;

@@ -13,6 +13,7 @@ const Home = () => {
       fontSize="80px"
       paddingTop="80px"
       color="black"
+      _selection={{ color: "white", bg: "green.400"}}
       >
       Welcome to Movie Tracker
       </Heading>
