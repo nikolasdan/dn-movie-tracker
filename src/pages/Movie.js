@@ -16,6 +16,8 @@ import { useQuery } from 'react-query';
 import { buildImageUrl, imageFallback, buildMovieUrl } from '../connectors/tmdb';
 import { getYear } from '../utils';
 import WatchlistButton from '../Components/WatchlistButton';
+import "@fontsource/montserrat"
+
 
 export default function Movie() {
   const { movieId } = useParams();
@@ -48,22 +50,22 @@ export default function Movie() {
   }
 
   return (
-    <Container p={3} maxW="80em">
+    <Container p={3} paddingTop="50px" maxW="80em">
       <HStack mb={3} justify="space-between">
         <IconButton
           aria-label="Back"
           icon={<ChevronLeftIcon />}
           variant="outline"
           fontSize={36}
-          colorScheme="teal"
+          color="green.400"
           onClick={history.goBack}
         />
         <HStack>
-          <WatchlistButton movie={movie} />
+          <WatchlistButton movie={movie} color="green.400" />
           <IconButton
             aria-label={isHistoryActive ? 'Remove from history' : 'Mark as watched'}
             icon={isHistoryActive ? <CheckIcon /> : <AddIcon />}
-            colorScheme="teal"
+            color="green.400"
             variant={isHistoryActive ? 'solid' : 'outline'}
             onClick={() => setHistoryActive(a => !a)}
           />
@@ -81,12 +83,12 @@ export default function Movie() {
         </Box>
         <Box w="100%">
           <HStack justify="space-between">
-            <Heading as="h2">{movie.title}</Heading>
-            <Text as="span" color="GrayText">
+            <Heading as="h2" fontFamily="montserrat">{movie.title}</Heading>
+            <Text as="span" color="GrayText" fontFamily="montserrat">
               {getYear(movie.release_date)}
             </Text>
           </HStack>
-          <Text>{movie.overview}</Text>
+          <Text fontFamily="montserrat">{movie.overview}</Text>
         </Box>
       </HStack>
     </Container>

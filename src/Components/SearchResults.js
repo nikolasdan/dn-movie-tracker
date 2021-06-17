@@ -4,6 +4,8 @@ import { UnorderedList, ListItem, Link, Progress, Text, Center } from '@chakra-u
 import { useQuery } from 'react-query';
 import { buildSearchMovieUrl } from '../connectors/tmdb';
 import { getYear } from '../utils';
+import "@fontsource/montserrat"
+
 
 export default function Search() {
   const { terms } = useParams();
@@ -14,7 +16,7 @@ export default function Search() {
   );
 
   if (isIdle) {
-    return <Center><Text padding="15px">Type the name of a movie!</Text></Center>;
+    return <Center><Text padding="15px" fontFamily="Montserrat">Type the name of a movie!</Text></Center>;
   }
   if (isLoading) {
     return <Progress size="xs" isIndeterminate />;
@@ -30,12 +32,12 @@ export default function Search() {
     return <Text>No results</Text>;
   }
   return (
-    <UnorderedList>
+    <UnorderedList >
       {data.results.map(({ id, title, release_date }) => (
-        <ListItem key={id}>
+        <ListItem padding="3px" key={id}>
           <Link as={RouterLink} to={`/movies/${id}`}>
-            <Text as="span">{title} </Text>
-            <Text as="span" color="GrayText">
+            <Text as="span" _hover={{ color: "green.400" , transition: "0.3s" }} fontFamily="montserrat">{title} </Text>
+            <Text as="span" fontFamily="montserrat" color="GrayText">
               {getYear(release_date)}
             </Text>
           </Link>

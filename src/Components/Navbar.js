@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { NavLink as RouterLink } from 'react-router-dom';
 import { HamburgerIcon } from "@chakra-ui/icons";
+import "@fontsource/montserrat"
 
 const MenuItem = ({ to, children }) => (
   <Link as={RouterLink} to={to} mt={{ base: 4, sm: 0 }} mr={6} display="block"  padding="13px" borderRadius="10px" _focus={{ boxShadow: "none" }} _hover={{ bg: "white", color: "black" , transition: "0.5s" }}>
@@ -30,7 +31,7 @@ const Navbar = (props) => {
       justify="space-between"
       wrap="wrap"
       padding={6}
-      bg="black"
+      bg="green.400"
       color="white"
       {...props}
     >
@@ -52,7 +53,7 @@ const Navbar = (props) => {
         alignText="center"
         flexGrow={1}
         mt={{ base: 4, md: 0 }}
-        fontFamily="Lato"
+        fontFamily="Montserrat"
       >
         <Center>
         <MenuItem to="/search" padding="13px" borderRadius="10px" _focus={{ boxShadow: "none" }} _hover={{ bg: "white", color: "black" , transition: "0.5s" }}>Search</MenuItem>
@@ -69,7 +70,7 @@ const Navbar = (props) => {
         <Button
           variant="outline"
           _hover={{ bg: "white", color: "black" }}
-          fontFamily="Lato"
+          fontFamily="Montserrat"
           _focus={{ boxShadow: "none" }}
         >
           Account

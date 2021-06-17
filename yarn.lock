@@ -1876,6 +1876,16 @@
     "minimatch" "^3.0.4"
     "strip-json-comments" "^3.1.1"
 
+"@fontsource/montserrat@^4.4.5":
+  "integrity" "sha512-1F3cR9OIp4Qi1AJHFg/SeFeUWLYemMgI3ldetx0mrlHoWeMuK+p2YentYIIZVkV9ogXOIE2QEw7VnHlGBPo7iw=="
+  "resolved" "https://registry.npmjs.org/@fontsource/montserrat/-/montserrat-4.4.5.tgz"
+  "version" "4.4.5"
+
+"@fontsource/rubik@^4.4.5":
+  "integrity" "sha512-a9sYAHbB1g04Vux8Wv1iKKHNM86gGWDy/YrFA0hArG1nPOrYOijzl9DfrC9rQMeah97ZQmTQpRvnUY712+MFKA=="
+  "resolved" "https://registry.npmjs.org/@fontsource/rubik/-/rubik-4.4.5.tgz"
+  "version" "4.4.5"
+
 "@hapi/accept@5.0.2":
   "integrity" "sha512-CmzBx/bXUR8451fnZRuZAJRlzgm0Jgu5dltTX/bszmR2lheb9BpyN47Q1RbaGTsvFzn0PXAEs+lXDKfshccYZw=="
   "resolved" "https://registry.npmjs.org/@hapi/accept/-/accept-5.0.2.tgz"
@@ -11958,6 +11968,11 @@
   "version" "0.8.0-beta.0"
   dependencies:
     "whatwg-url" "^7.0.0"
+
+"source-sans@^3.28.0":
+  "integrity" "sha512-ra//x4S1iPfKIAtyHVe92/75CirB3ixIRuWDBOZIIjSUD7DJrs4WSfJaQ1U3MG3JytIJV9G64tUHonhXAftDsw=="
+  "resolved" "https://registry.npmjs.org/source-sans/-/source-sans-3.28.0.tgz"
+  "version" "3.28.0"
 
 "sourcemap-codec@^1.4.4":
   "integrity" "sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA=="
